@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 int main(){
-int arr[20],l,h,i,j,k=0;
+int arr[20],l,h,i,j,k=0,sum=0;
 
 printf("\n enter the lowest and highest number of he range\n");
 scanf("%d%d",&l,&h);
@@ -28,8 +28,11 @@ for(i=l;i<=h;i++)
 
 
 for(i=0;i<k;i++)
+{
 printf("\nThe prime numbers are %d\n",arr[i]);
-
+sum+=arr[i];
+}
+printf("\n Sum of prime numbers is %d",sum);
 return 0;
 
 }
